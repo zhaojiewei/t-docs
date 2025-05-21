@@ -13,4 +13,7 @@ export default defineConfig({
     ],
   },
   lastUpdated: true,
+  base: '/t-docs',
+  vite: {
+  }
 })
