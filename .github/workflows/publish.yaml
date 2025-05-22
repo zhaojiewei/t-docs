@@ -34,11 +34,9 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=4096
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          token: ${{ secrets.TOKEN }}
-          branch: gh-pages
-          folder: .vitepress/dist
-          git-config-name: weizj
-          git-config-email: weizj@email.com
-          commit-message: website deploy
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: .vitepress/dist
+          publish_branch: gh-pages
+          commit_message: ${{ github.event.head_commit.message }}
