@@ -40,8 +40,4 @@ jobs:
           publish_dir: .vitepress/dist
           publish_branch: gh-pages
           commit_message: ${{ github.event.head_commit.message }}
-      # - name: Deploy GitHub Pages site
-      #   uses: actions/deploy-pages@v4
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-          
+       
