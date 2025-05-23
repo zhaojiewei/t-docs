@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
+  name: "记录美好生活"
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
